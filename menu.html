@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    
+    <title>Tu Tienda de Cacao</title>
+</head>
+<body>  
+
+    <!-- Encabezado -->
+    <header>
+        
+        <div class="menu-toggle">
+            <button id="menu-btn">&#9776;</button>
+        </div>
+
+        <div class="header-left">
+            <div class="logo">
+                <img src="img/Logo.jpg" alt="Logo de la empresa">
+            </div>
+            <h2>CACAO ARTESANO</h2>
+        </div>
+        <div class="header-center">
+            <input type="text" placeholder="Buscar productos" class="search-bar">
+        </div>
+        <div class="header-right">
+            <button class="login-button">ENTRAR</button>
+        </div>
+
+        <!-- Botón de carrito con un id -->
+        <button id="btn-carrito" class="btn btn-ver-carrito">
+            <img src="img/CarritoDeCompras.png" alt="Carrito de Compras">
+            Ir al Carrito
+        </button>
+
+
+        <div id="carrito-popup" class="carrito-popup">
+            <button id="btn-cerrar-carrito" class="btn btn-cerrar-carrito">Cerrar</button>
+
+            <h2>Carrito de Compras</h2>
+            <!-- Contenedor de productos en el carrito -->
+            <div id="productos-en-carrito">
+            <!-- Aquí se mostrarán los productos en el carrito -->
+            </div>
+
+        </div>        
+    </header>
+
+
+    <!-- Barra de Navegación -->
+    <nav>
+        
+        <ul>
+            <li><a href="#">Inicio</a></li>
+            <li><a href="#">Productos</a></li>
+            <li><a href="#">Proceso de produccion</a></li>
+            <li><a href="#">Recetas</a></li>
+            <li><a href="#">Blog</a></li>
+        </ul>
+    </nav>
+
+    <!-- Banner Promocional -->
+    <section id="banner">
+        <h2>Descubre el Sabor del Cacao</h2>
+        <p>Productos de cacao de la más alta calidad.</p>
+        <a href="#" class="btn">Ver Ofertas</a>
+    </section>
+
+    <!-- Lista de Productos -->
+    <section id="productos">
+        <h2>Nuestros Productos Destacados</h2>
+        <div class="producto">
+            <img src="producto1.jpg" alt="Producto 1">
+            <h3>Producto 1</h3>
+            <p>Descripción del producto 1.</p>
+            <span class="precio">$10.99</span>
+            <button class="btn btn-agregar-carrito" data-nombre="Producto 1" data-precio="10.99" data-imagen="producto1.jpg">Agregar al Carrito</button>
+        </div>
+        <div class="producto">
+            <img src="producto2.jpg" alt="Producto 2">
+            <h3>Producto 2</h3>
+            <p>Descripción del producto 2.</p>
+            <span class="precio">$12.99</span>
+            <button class="btn btn-agregar-carrito" data-nombre="Producto 1" data-precio="10.99" data-imagen="producto1.jpg">Agregar al Carrito</button>
+
+        </div>
+        <!-- Agrega más productos aquí -->
+    </section>
+
+    <!-- Detalles del Producto -->
+    <section id="detalle-producto">
+        <img src="producto1.jpg" alt="Producto 1">
+        <h2>Producto 1</h2>
+        <p>Descripción detallada del Producto 1.</p>
+        <span class="precio">$10.99</span>
+        <button class="btn btn-agregar-carrito" data-nombre="Producto 1" data-precio="10.99" data-imagen="producto1.jpg">Agregar al Carrito</button>
+
+    </section>
+
+    <!-- Carrito de Compras -->
+    <!-- <section id="carrito">
+        <h2>Carrito de Compras</h2> -->
+        <!-- Detalles del carrito aquí -->
+    <!--    <div class="resumen-carrito">
+            <p>Total: $0.00</p>
+            <a href="#" class="btn">Pagar</a>
+        </div>
+    </section> -->
+
+    <!-- Pie de Página -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section contact-info">
+                <h3>Contacto</h3>
+                <p>Dirección: Facultad de Contaduria y Administracion CI</p><br>
+                <p>Teléfono: +52 (961) 603 7865</p><br>
+                <p>Correo electrónico: ernestodguez31@gmail.com</p><br>
+            </div>
+            <div class="footer-section social-media">
+                <h3>Redes Sociales</h3>
+                <a href="[Enlace a Facebook]">Facebook</a>
+                <a href="[Enlace a Twitter]">Twitter</a>
+                <a href="[Enlace a Instagram]">Instagram</a>
+            </div>
+            <div class="footer-section newsletter">
+                <h3>Boletín Informativo</h3>
+                <p>Suscríbete para recibir noticias y ofertas especiales.</p>
+                <form action="[URL del formulario de suscripción]" method="POST">
+                    <input type="email" name="email" placeholder="Tu correo electrónico" required>
+                    <button type="submit">Suscribirse</button>
+                </form>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            &copy; 2023 CACAO ARTESANO | Todos los derechos reservados
+        </div>
+    </footer> 
+
+    <script src="js/carrito.js"></script>
+
+</body>
+</html>
